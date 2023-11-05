@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <nav id="nav">
+        <div class="logo">
+          <img src="new logo.png" alt="">
+        </div>
+        <div class="toggle">
+          <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+       </nav>
+       
+       <div class="courses-container">
+        <div class="course-item">
+            <a href="engineering.html">
+            <img src="engineering-icon.png" alt="Engineering Icon" width="50" height="50">
+            <p>Engineering</p>
+        </a>
+        </div>
+        <div class="course-item">
+            <a href="management.html">
+            <img src="management-icon.png" alt="Management Icon" width="50" height="50">
+            <p>Management</p>
+        </a>
+        </div>
+        <div class="course-item">
+            <a href="pharmacy.html">
+            <img src="pharmacy-icon.png" alt="Pharmacy Icon" width="50" height="50">
+            <p>Pharmacy</p>
+        </a>
+        </div>
+        <div class="course-item">
+            <a href="architecture.html">
+            <img src="architecture-icon.png" alt="Architecture Icon" width="50" height="50">
+            <p>Architecture</p>
+        </a>
+        </div>
+
+        <!-- Clear float after the first row -->
+        <div class="clear"></div>
+
+        <div class="course-item">
+            <a href="computer-app.html">
+            <img src="computer-app-icon.png" alt="Computer Application Icon" width="50" height="50">
+            <p>Computer Application</p>
+        </a>
+        </div>
+        <div class="course-item">
+            <a href="dental-science.html">
+            <img src="dental-science-icon.png" alt="Dental Science Icon" width="50" height="50">
+            <p>Dental Science</p>
+        </a>
+        </div>
+        <div class="course-item">
+            <a href="hotel-management.html">
+            <img src="hotel-management-icon.png" alt="Hotel Management Icon" width="50" height="50">
+            <p>Hotel Management</p>
+            </a>
+        </div>
+    </div>
+    
+    <div id="feedback">  
+        <form id="commentForm" action="config.php" method="post">
+    <h1>Community and Feedback</h1>
+
+    <!-- Comment Display Area -->
+    <h2>Comments:</h2>
+    <div id="commentArea">
+        <!-- Sample comments -->
+        <div class="comment">
+            <div class="comment-text">
+                <strong>John:</strong><br>
+                This is a great website!
+            </div>
+            <div class="comment-options">
+                <span class="comment-like" data-likes="0" onclick="likeComment(this)">Like</span>
+                <span class="comment-reply" onclick="replyToComment(this)">Reply</span>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="comment-text">
+                <strong>Alice:</strong><br>
+                I have a question about the course materials.
+            </div>
+            <div class="comment-options">
+                <span class="comment-like" name="like1" data-likes="0" onclick="likeComment(this)">Like</span>
+                <span class="comment-reply" name="reply" onclick="replyToComment(this)">Reply</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comment Form and Community Interaction -->
+    <button id="showCommentButton" >Add a Comment</button>
+    <div id="commentInput">
+        <h2>Leave a Comment:</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="comment">Comment:</label>
+            <textarea id="commentText" rows="4" name="message" required></textarea><br><br>
+
+            <input type="submit" id="submit" name="add_A_Comment" value="Submit Comment">
+        </form>
+    </div>
+</div> 
+
+
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+      <script src="script.js"></script>
+</body>
+</html>
